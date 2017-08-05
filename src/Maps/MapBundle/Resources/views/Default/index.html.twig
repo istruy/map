@@ -1,0 +1,28 @@
+<!-- app/Resources/views/base.html.twig -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Symblog{% endblock %} - Symblog</title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    {% block stylesheets %}
+        {% stylesheets 'bundles/commondirty/css_original/c.css' filter="cssrewrite" %}
+        <link href="{{ asset_url }}" rel="stylesheet" type="text/css" />
+        {% endstylesheets %}
+    {% endblock %}
+
+    <link href="../../assets/css/styleMaps.css" rel="stylesheet" type="text/css" />
+
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+</head>
+<body>
+
+<div id="map"></div>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="../../../../../../web/js/map.js" type="text/javascript"></script>
+
+</body>
+</html>

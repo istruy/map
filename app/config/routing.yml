@@ -1,0 +1,5 @@
+map:
+    resource: "@MapBundle/Resources/config/routing.yml"
+    prefix:   /
+
+
